@@ -31,11 +31,22 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "_2cUTAJ1fEe-R9ZxV-WnY_w",
+    "id" : "_2cUTAJ1fEe-R9ZxV-WnY_w - metadata",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_lH3WYJ1kEe-R9ZxV-WnY_w",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_3Jv5YJ1iEe-R9ZxV-WnY_w",
     "version" : "Latest",
     "type" : "property"
   }, {
-    "id" : "_2cUTAJ1fEe-R9ZxV-WnY_w - metadata",
+    "id" : "_3Jv5YJ1iEe-R9ZxV-WnY_w - finance",
     "version" : "Latest",
     "type" : "schema"
   } ]
