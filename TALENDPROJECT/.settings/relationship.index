@@ -20,9 +20,9 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "_J3I-UJ9gEe-R9ZxV-WnY_w",
+    "id" : "TALENDPROJECT:_8XeKMJ_NEe-R9ZxV-WnY_w",
     "version" : "Latest",
-    "type" : "property"
+    "type" : "job"
   }, {
     "id" : "_J3I-UJ9gEe-R9ZxV-WnY_w - metadata",
     "version" : "Latest",
