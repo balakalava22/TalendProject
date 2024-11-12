@@ -60,6 +60,17 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "__KGCUKELEe-PsJqClpg38A",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_3Jv5YJ1iEe-R9ZxV-WnY_w",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_bI7IYJ1hEe-R9ZxV-WnY_w",
     "version" : "0.1",
     "type" : "job"
@@ -134,9 +145,9 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "_2cUTAJ1fEe-R9ZxV-WnY_w - metadata",
+    "id" : "_3Jv5YJ1iEe-R9ZxV-WnY_w",
     "version" : "Latest",
-    "type" : "schema"
+    "type" : "property"
   } ]
 }, {
   "baseItem" : {
