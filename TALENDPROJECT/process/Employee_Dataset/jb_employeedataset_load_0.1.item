@@ -22,7 +22,7 @@
     <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
     <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
     <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
-    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="true"/>
     <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
     <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
     <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
@@ -103,8 +103,6 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_79nQ8KCXEe-PsJqClpg38A" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_79nQ8KCXEe-PsJqClpg38A - metadata" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="DYNAMIC" value="" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
@@ -267,7 +265,7 @@
       <column comment="" key="false" length="49" name="TerminationDescription" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="17" name="DepartmentType" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="24" name="Division" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="DOB" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DOB" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="State" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="19" name="JobFunctionDescription" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="6" name="GenderCode" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -295,7 +293,7 @@
       <column comment="" key="false" length="49" name="TerminationDescription" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="17" name="DepartmentType" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="24" name="Division" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="DOB" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DOB" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="State" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="19" name="JobFunctionDescription" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="6" name="GenderCode" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -351,7 +349,7 @@
       <column comment="" key="false" length="1" name="Current_Employee_Rating" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="Employee">
         <mapperTableEntries name="EmpID" expression="row1.EmpID " type="id_Integer" nullable="true"/>
@@ -371,7 +369,7 @@
         <mapperTableEntries name="TerminationDescription" expression="row1.TerminationDescription " type="id_String" nullable="true"/>
         <mapperTableEntries name="DepartmentType" expression="row1.DepartmentType " type="id_String" nullable="true"/>
         <mapperTableEntries name="Division" expression="row1.Division " type="id_String" nullable="true"/>
-        <mapperTableEntries name="DOB" expression="row1.DOB " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="DOB" expression="row1.DOB == null || row1.DOB.trim().isEmpty()?&#xD;&#xA;TalendDate.parseDate(&quot;d-MMM-yy&quot;,&quot;01-Jan-99&quot;): &#xD;&#xA;&#xD;&#xA;TalendDate.isDate(row1.DOB,&quot;d/M/yyyy&quot;)? &#xD;&#xA;TalendDate.parseDate(&quot;d/M/yyyy&quot;,row1.DOB):&#xD;&#xA;&#xD;&#xA;TalendDate.isDate(row1.DOB,&quot;dd/MM/yyyy&quot;)?&#xD;&#xA;TalendDate.parseDate(&quot;dd/MM/yyyy&quot;,row1.DOB):&#xD;&#xA;&#xD;&#xA;TalendDate.isDate(row1.DOB,&quot;d/MM/yyyy&quot;)? &#xD;&#xA;TalendDate.parseDate(&quot;d/MM/yyyy&quot;,row1.DOB):&#xD;&#xA;&#xD;&#xA;TalendDate.isDate(row1.DOB,&quot;dd-MM-yyyy&quot;)? &#xD;&#xA;TalendDate.parseDate(&quot;dd-MM-yyyy&quot;,row1.DOB):&#xD;&#xA;&#xD;&#xA;TalendDate.isDate(row1.DOB,&quot;d-MM-yyyy&quot;)?&#xD;&#xA;TalendDate.parseDate(&quot;d-MM-yyyy&quot;,row1.DOB):&#xD;&#xA;&#xD;&#xA;TalendDate.isDate(row1.DOB,&quot;dd-M-yyyy&quot;)? &#xD;&#xA;TalendDate.parseDate(&quot;dd-M-yyyy&quot;,row1.DOB):&#xD;&#xA;&#xD;&#xA;TalendDate.parseDate(&quot;d-MMM-yy&quot;,&quot;01-Jan-99&quot;) " type="id_Date" nullable="true"/>
         <mapperTableEntries name="State" expression="row1.State " type="id_String" nullable="true"/>
         <mapperTableEntries name="JobFunctionDescription" expression="row1.JobFunctionDescription " type="id_String" nullable="true"/>
         <mapperTableEntries name="GenderCode" expression="row1.GenderCode " type="id_String" nullable="true"/>
@@ -399,7 +397,7 @@
         <mapperTableEntries name="TerminationDescription" type="id_String" nullable="true"/>
         <mapperTableEntries name="DepartmentType" type="id_String" nullable="true"/>
         <mapperTableEntries name="Division" type="id_String" nullable="true"/>
-        <mapperTableEntries name="DOB" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="DOB" type="id_String" nullable="true"/>
         <mapperTableEntries name="State" type="id_String" nullable="true"/>
         <mapperTableEntries name="JobFunctionDescription" type="id_String" nullable="true"/>
         <mapperTableEntries name="GenderCode" type="id_String" nullable="true"/>
@@ -1516,9 +1514,6 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tFileInputDelimited_2">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
-  </connection>
   <connection connectorName="FLOW" label="Employee" lineStyle="0" metaname="Employee" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Employee" show="false"/>
@@ -1531,15 +1526,9 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
   </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileInputDelimited_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_2" target="tFileInputDelimited_3">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
-  </connection>
   <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tFileInputDelimited_3" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_3" target="tMap_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileInputDelimited_3" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_3" target="tFileInputDelimited_4">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="recruitment" lineStyle="0" metaname="recruitment" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tDBOutput_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>

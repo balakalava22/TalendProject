@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
-  <TalendMetadata:DelimitedFileConnection xmi:id="_7-ezoKCXEe-PsJqClpg38A" name="Employee" dataPackage="_7-ezoaCXEe-PsJqClpg38A" Server="Localhost 127.0.0.1" FilePath="C:/Data/Source/employee_data.csv" Encoding="UTF-8" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Comma"/>
+  <TalendMetadata:DelimitedFileConnection xmi:id="_7-ezoKCXEe-PsJqClpg38A" name="Employee" id="_79nQ8KCXEe-PsJqClpg38A" dataPackage="_7-ezoaCXEe-PsJqClpg38A" Server="Localhost 127.0.0.1" FilePath="C:/Data/Source/employee_data.csv" Encoding="UTF-8" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Comma"/>
   <orgomg.cwm.resource.record:RecordFile xmi:id="_7-ezoaCXEe-PsJqClpg38A" name="default" dataManager="_7-ezoKCXEe-PsJqClpg38A">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_7-ezoqCXEe-PsJqClpg38A" id="_q0_jIKCXEe-PsJqClpg38A" label="metadata">
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7-ezo6CXEe-PsJqClpg38A" label="EmpID" length="4" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
@@ -20,7 +20,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7-ezsaCXEe-PsJqClpg38A" label="TerminationDescription" length="49" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7-ezsqCXEe-PsJqClpg38A" label="DepartmentType" length="17" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7-ezs6CXEe-PsJqClpg38A" label="Division" length="24" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7-eztKCXEe-PsJqClpg38A" label="DOB" length="10" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7-eztKCXEe-PsJqClpg38A" label="DOB" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7-eztaCXEe-PsJqClpg38A" label="State" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7-eztqCXEe-PsJqClpg38A" label="JobFunctionDescription" length="19" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7-ezt6CXEe-PsJqClpg38A" label="GenderCode" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
