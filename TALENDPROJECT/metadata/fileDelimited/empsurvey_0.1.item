@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
-  <TalendMetadata:DelimitedFileConnection xmi:id="_w9twEaDzEe-PsJqClpg38A" name="empsurvey" dataPackage="_w9twEqDzEe-PsJqClpg38A" Server="Localhost 127.0.0.1" FilePath="C:/Data/Source/employee_engagement_survey_data.csv" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Comma"/>
-  <orgomg.cwm.resource.record:RecordFile xmi:id="_w9twEqDzEe-PsJqClpg38A" name="default" dataManager="_w9twEaDzEe-PsJqClpg38A">
-    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_w9twE6DzEe-PsJqClpg38A" id="_tFrHgKDzEe-PsJqClpg38A" label="metadata">
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_w9twFKDzEe-PsJqClpg38A" label="Employee_ID" length="4" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_w9twFaDzEe-PsJqClpg38A" label="Survey_Date" length="10" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_w9twFqDzEe-PsJqClpg38A" label="Engagement_Score" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_w9twF6DzEe-PsJqClpg38A" label="Satisfaction_Score" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_w9twGKDzEe-PsJqClpg38A" label="Work_Life_Balance_Score" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+  <TalendMetadata:DelimitedFileConnection xmi:id="_WOeAAaHUEe-PsJqClpg38A" name="empsurvey" dataPackage="_WOeAAqHUEe-PsJqClpg38A" Server="Localhost 127.0.0.1" FilePath="C:/Data/Source/employee_engagement_survey_data.csv" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_WOeAAqHUEe-PsJqClpg38A" name="default" dataManager="_WOeAAaHUEe-PsJqClpg38A">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_WOeAA6HUEe-PsJqClpg38A" id="_S7kr4KHUEe-PsJqClpg38A" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WOeABKHUEe-PsJqClpg38A" label="employee_id" length="4" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WOeABaHUEe-PsJqClpg38A" label="survey_date" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WOeABqHUEe-PsJqClpg38A" label="engagement_score" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WOeAB6HUEe-PsJqClpg38A" label="satisfaction_score" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WOeACKHUEe-PsJqClpg38A" label="work_life_balance_score" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
     </ownedElement>
   </orgomg.cwm.resource.record:RecordFile>
 </xmi:XMI>

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
-  <TalendMetadata:DelimitedFileConnection xmi:id="_XtVQ8aDzEe-PsJqClpg38A" name="training" id="_XtVQ8KDzEe-PsJqClpg38A" dataPackage="_XtVQ8qDzEe-PsJqClpg38A" Server="Localhost 127.0.0.1" FilePath="C:/Data/Source/training_and_development_data.csv" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Comma" splitRecord="true"/>
-  <orgomg.cwm.resource.record:RecordFile xmi:id="_XtVQ8qDzEe-PsJqClpg38A" name="default" dataManager="_XtVQ8aDzEe-PsJqClpg38A">
-    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_XtVQ86DzEe-PsJqClpg38A" id="_O3jjEKDzEe-PsJqClpg38A" label="metadata">
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XtVQ9KDzEe-PsJqClpg38A" label="Employee_ID" length="4" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XtVQ9aDzEe-PsJqClpg38A" label="Training_Date" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XtVQ9qDzEe-PsJqClpg38A" label="Training_Program_Name" length="22" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XtVQ96DzEe-PsJqClpg38A" label="Training_Type" length="8" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XtVQ-KDzEe-PsJqClpg38A" label="Training_Outcome" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XtVQ-aDzEe-PsJqClpg38A" label="Location" length="18" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XtVQ-qDzEe-PsJqClpg38A" label="Trainer" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XtVQ-6DzEe-PsJqClpg38A" label="Training_Duration_Days" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XtVQ_KDzEe-PsJqClpg38A" label="Training_Cost" length="6" precision="3" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+  <TalendMetadata:DelimitedFileConnection xmi:id="_zUwPIKHTEe-PsJqClpg38A" name="training" dataPackage="_zUwPIaHTEe-PsJqClpg38A" Server="Localhost 127.0.0.1" FilePath="C:/Data/Source/training_and_development_data.csv" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_zUwPIaHTEe-PsJqClpg38A" name="default" dataManager="_zUwPIKHTEe-PsJqClpg38A">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_zUwPIqHTEe-PsJqClpg38A" id="_uG6RQKHTEe-PsJqClpg38A" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zUwPI6HTEe-PsJqClpg38A" label="employee_id" length="4" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zUwPJKHTEe-PsJqClpg38A" label="training_date" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zUwPJaHTEe-PsJqClpg38A" label="training_program_name" length="22" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zUwPJqHTEe-PsJqClpg38A" label="training_type" length="8" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zUwPJ6HTEe-PsJqClpg38A" label="training_outcome" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zUwPKKHTEe-PsJqClpg38A" label="location" length="17" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zUwPKaHTEe-PsJqClpg38A" label="trainer" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zUwPKqHTEe-PsJqClpg38A" label="training_duration_days" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zUwPK6HTEe-PsJqClpg38A" label="training_cost" length="6" precision="3" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
     </ownedElement>
   </orgomg.cwm.resource.record:RecordFile>
 </xmi:XMI>
